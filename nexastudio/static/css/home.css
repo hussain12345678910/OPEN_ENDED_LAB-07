@@ -1,0 +1,118 @@
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+}
+
+.hero h1 span {
+  color: #6c63ff;
+}
+
+.hero p {
+  margin: 20px 0;
+  color: #aaa;
+  max-width: 500px;
+}
+
+.hero-btns {
+  margin-top: 20px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 10%;
+  background: #111;
+  text-align: center;
+}
+
+.stat h3 {
+  font-size: 2rem;
+  color: #6c63ff;
+}
+
+.stat p {
+  color: #aaa;
+}
+
+.home-services {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.home-services h2 {
+  font-size: 2.5rem;
+}
+
+.home-services .sub {
+  color: #aaa;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.service-box {
+  background: #1a1a2e;
+  padding: 25px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.service-box:hover {
+  transform: translateY(-8px);
+}
+
+.service-box p {
+  color: #aaa;
+}
+
+.cta {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #6c63ff, #00d4aa);
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.cta p {
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+}
+
+@media (max-width: 768px) {
+
+  .stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+}

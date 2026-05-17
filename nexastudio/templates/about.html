@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">Nexa<span>Studio</span></div>
+  <ul class="nav-links">
+    <li><a href="{{ url_for('index') }}">Home</a></li>
+    <li><a href="{{ url_for('about') }}" class="active">About</a></li>
+    <li><a href="{{ url_for('services') }}">Services</a></li>
+    <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+  </ul>
+  <a href="{{ url_for('login') }}" class="nav-cta">Sign In</a>
+</nav>
+
+<section class="section about-hero">
+  <div class="about-text">
+    <h2>About NexaStudio</h2>
+    <p>
+      NexaStudio was founded in 2012 with a passion for building meaningful digital experiences. 
+      We combine creativity, technology, and strategy to deliver products that truly stand out.
+    </p>
+    <p>
+      From startups to enterprises, we help brands grow through design, development, and innovation.
+    </p>
+  </div>
+
+  <div class="about-image">
+    <div class="img-box">🏢</div>
+  </div>
+</section>
+
+<section class="section team-section">
+
+  <h2 class="team-title">Meet Our Team</h2>
+
+  <div class="team-grid">
+
+    <div class="team-card">
+      <div class="avatar">👤</div>
+      <h4>Aiden Carter</h4>
+      <p>Founder & CEO</p>
+    </div>
+
+    <div class="team-card">
+      <div class="avatar">👤</div>
+      <h4>Sofia Reyes</h4>
+      <p>Head of Design</p>
+    </div>
+
+    <div class="team-card">
+      <div class="avatar">👤</div>
+      <h4>Marcus Lin</h4>
+      <p>Lead Engineer</p>
+    </div>
+
+    <div class="team-card">
+      <div class="avatar">👤</div>
+      <h4>Priya Nair</h4>
+      <p>Strategy Director</p>
+    </div>
+
+  </div>
+
+</section>
+
+</body>
+</html>
